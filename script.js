@@ -8,6 +8,15 @@ for (let index = 1; index <= 256; index++) {
 }
 
 const getColor = () => {
-    const colors = ['red', 'blue', 'green', 'pink', ' orange', 'yellow'];
+    const colors = ['red', 'blue', 'green', 'pink', ' orange', 'yellow', 'white', 'black', 'grey'];
     return colors[Math.floor(Math.random() * colors.length)];
 }
+
+const squares = document.querySelectorAll('.item');
+
+squares.forEach(square =>{
+    square.addEventListener('mouseover', () =>{
+        const color = getColor();
+        square.style.backgroundColor = `${color}`;
+    });
+});
