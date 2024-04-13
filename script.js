@@ -12,8 +12,7 @@ const changeDivColor = () => {
 
     squares.forEach(square =>{
         square.addEventListener('mouseover', () =>{
-            const color = getColor();
-            square.style.backgroundColor = `${color}`;
+            square.style.backgroundColor = getColor();
         });
     });
 }
@@ -40,7 +39,6 @@ const createGrid = (size) => {
         itemContainer.classList.add('itemContainer');
     
         for (let j = 1; j <= size; j++){
-
             const item = document.createElement('div');
             item.id = `item-${index}-${j}`;
             item.classList.add('item');
