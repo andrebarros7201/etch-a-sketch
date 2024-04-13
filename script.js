@@ -7,3 +7,7 @@ for (let index = 1; index <= 256; index++) {
     container.appendChild(item);    
 }
 
+const getColor = () => {
+    const colors = ['red', 'blue', 'green', 'pink', ' orange', 'yellow'];
+    return colors[Math.floor(Math.random() * colors.length)];
+}
