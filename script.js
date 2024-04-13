@@ -63,3 +63,11 @@ btn.addEventListener('click', () => {
 // Create the initial grid
 createGrid(16);
 
+const clearButton = document.querySelector('#clear');
+
+clearButton.addEventListener('click', () =>{
+    const squares = document.querySelectorAll('.item');
+    squares.forEach(square =>{
+        square.style.backgroundColor = 'white';
+    })
+})
